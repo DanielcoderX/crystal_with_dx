@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    {%- include meta.html -%}
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {%- include assets.html -%}
+  </head>
+  <body>
+    {%- include navbar.html -%}
+    <div class="container-fluid ">
+      {{ content }}
+    </div>
+  </body>
+</html>
