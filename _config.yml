@@ -1,5 +1,5 @@
-url: "http://github.com/danielcoderx"
-baseurl: "/"
+url: "https://danielcoderx.github.io/crystal_with_dx/"
+baseurl: "/crystal_with_dx"
 title: "Crystal With DX"
 author: "DX"
 description: "A community-driven platform dedicated to learning and exploring the Crystal programming language."
