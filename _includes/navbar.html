@@ -3,7 +3,7 @@
     <a class="navbar-brand" href="/">
       Crystal With
       <img src="{{ '/assets/image/logo.png' | relative_url }}" alt="Crystal With DX Logo"
-        style="height: 40px;scale: 2;padding-bottom: 5px;padding-left: 5px;">
+        style="height: 40px; scale: 2; padding-bottom: 5px; padding-left: 5px;">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +13,7 @@
       <ul class="navbar-nav">
         {%- for item in site.data.navigation -%}
         <li class="nav-item">
-          <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+          <a class="nav-link" href="{{ item.link | relative_url }}">{{ item.name }}</a>
         </li>
         {%- endfor -%}
       </ul>
