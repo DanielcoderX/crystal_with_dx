@@ -6,7 +6,6 @@ title: "Blog"
 <div class="container">
   <h2 class='text-center'>Available Posts</h2>
   <hr>
-  {%- if site.posts.size > 0 -%}
     {%- for post in site.posts -%}
     <div class="card mb-3">
       <div class="card-body">
@@ -16,10 +15,4 @@ title: "Blog"
       </div>
     </div>
     {%- endfor -%}
-
-  {%- else -%}
-    <div class="text-center">
-      <p>I'm tired of writing, taking a nap... 😴 Check back later for more creativity!</p>
-    </div>
-  {%- endif -%}
 </div>
