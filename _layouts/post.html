@@ -1,10 +1,44 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: " en-US" }}">
+
 <head>
   {%- include meta.html -%}
   <title>{{ page.title }} - {{ site.title }}</title>
   {%- include assets.html -%}
+  <style>
+    /* Customize the background and border for the code block container */
+.highlight {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Customize the appearance of the code itself */
+.highlight code {
+  display: block;
+  font-family: 'Fira Code', Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  white-space: pre;
+  color: #333;
+  border-radius: 8px;
+}
+
+/* Add a slight animation when hovering over code blocks */
+.highlight code:hover {
+  background-color: #fff;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+  </style>
 </head>
+
 <body>
   {%- include navbar.html -%}
 
@@ -18,4 +52,5 @@
     </article>
   </div>
 </body>
+
 </html>
